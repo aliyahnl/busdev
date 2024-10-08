@@ -137,7 +137,7 @@ h6,
     max-height: 45px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1080px) {
     .sticky-top.navbar-light {
         position: relative;
         background: #FFFFFF;
@@ -164,7 +164,7 @@ h6,
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1080px) {
     .navbar-light {
         position: absolute;
         width: 100%;
@@ -236,7 +236,7 @@ h6,
 
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1080px) {
     .hero-header {
         padding: 6rem 0 9rem 0;
     }
