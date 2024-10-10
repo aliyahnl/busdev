@@ -164,7 +164,7 @@ h6,
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1080px) {
     .navbar-light {
         position: absolute;
         width: 100%;
@@ -231,7 +231,6 @@ h6,
         cover,
         contain;
 }
-
 
 @media (max-width: 1080px) {
     .hero-header {
