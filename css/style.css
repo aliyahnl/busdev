@@ -28,6 +28,9 @@
     z-index: 99;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /*** Heading ***/
 h1,
@@ -99,6 +102,7 @@ h6,
     font-weight: bold;
     vertical-align: middle;
     margin-left: 8px;
+    
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -111,6 +115,7 @@ h6,
     color: var(--light) !important;
     outline: none;
     transition: .5s;
+    
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -121,7 +126,6 @@ h6,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--secondary) !important;
-    text-decoration: underline;
 }
 
 .navbar-light .navbar-brand h1 {
@@ -230,6 +234,65 @@ h6,
         contain,
         cover,
         contain;
+}
+
+/*** ASET ***/
+.hero-header-aset {
+    margin-bottom: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    background:
+        url(../img/asetheader.png),
+        url(../img/asetheader.png);
+    background-position:
+        center center,
+        left 0px top 0px;
+    background-repeat: no-repeat;
+    background-size:
+        cover,
+        contain;
+}
+
+/*** CATERING ***/
+.hero-header-catering {
+    margin-bottom: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    background:
+        url(../img/lunchbox1.png),
+        url(../img/lunchbox1.png);
+    background-position:
+        center center,
+        left 0px top 0px;
+    background-repeat: no-repeat;
+    background-size:
+        cover,
+        contain;
+}
+
+.hero-header-catering {
+    margin-bottom: 2.5rem;
+}
+
+/*** TRAINING ***/
+.hero-header-training {
+    margin-bottom: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    background:
+        url(../img/training-header.png),
+        url(../img/training-header.png);
+    background-position:
+        center center,
+        left 0px top 0px;
+    background-repeat: no-repeat;
+    background-size:
+        cover,
+        contain;
+}
+
+.hero-header-training {
+    margin-bottom: 2.5rem;
 }
 
 @media (max-width: 1080px) {
@@ -485,13 +548,14 @@ h6,
 /*** Footer ***/
 .footer {
     margin-top: 2rem;
-    padding-top: 2rem;
+    padding-top: 160px !important;
     background:
-        url(../img/map.png);
+        url(../img/Shape3.png);
     background-position:
-        center top,
-        center center;
+        center top;
     background-repeat: no-repeat;
+    background-size:
+    contain;
 }
 
 .footer .btn.btn-social {
@@ -569,29 +633,328 @@ h6,
     margin: 0 auto;
 }
 
-.contact-info {
-    text-align: center;
+/*** contact dan maps ***/
+.contact-section .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
-.contact-info h4 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.contact-info {
-    position: absolute;
-    z-index: 10;
-    top: 3270px;
-    background-color: #7E95BE;
-    padding: 20px;
-    width: 250px;
-    right: 350px;
-    text-align: center;
+.map-wrapper {
+    margin-left: 200px;
+    overflow: hidden;
+    width: 90%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    background-color: #4C6779;
+    color: white;
+    right: 120px;
+    padding: 20px;
+    width: 100%;
+    max-width: 270px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .contact-info {
+        width: 90%; 
+        max-width: 300px; 
+        margin: 20px auto;
+        right: 0; 
+    }
+    
+    .map-wrapper {
+        margin-left: 0;
+    }
+}
+
+/** about di kelana aset ***/
+.about {
+    max-width: 1050px;
+    margin: 30px auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.hero-header-aset {
+    margin-bottom: 2.5rem;
+}
+
+.about h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.about h2::after {
+    content: '';
+    display: inline-block; 
+    width: 250px; 
+    height: 5px;
+    background-color: #555; 
+    vertical-align: middle;
+    margin-left: 1px; 
+}
+
+.about h2 span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    margin-top: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 6px;
+    text-align: justify;
+}
+
+/* Custom Styles */
+.carousel-item img {
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #1D4163;
 }
 
 @media (max-width: 768px) {
-    .col-lg-8, .col-lg-4 {
+    .fs-header {
+        font-size: 2rem; 
+    }
+    
+    .hero-header-aset {
+        margin-bottom: 1.5rem; 
+    }
+
+    .slideshow-text {
+        margin-top: 0.5rem; 
+        text-align: center; 
+    }
+
+    .ftco-section {
+        margin-bottom: 1px;
+    }
+}
+
+
+/*** KELANA CATERING ***/
+
+/* Services Section */
+.services {
+    padding: 2px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-card {
+    background-color: #00274d;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    gap: 20px;
+    align-items: center;
+}
+
+.service-card img {
+    flex: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.service-card .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.service-card h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-card img {
+        order: -1;
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card .text-content {
+        order: 1; 
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.keunggulan {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.keunggulan h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.keunggulan-items {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.keunggulan-item {
+    background: rgb(255, 255, 255);
+    border-left: 5px solid #00274d;
+    padding: 20px;
+    width: calc(20% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.keunggulan-item:hover {
+    background-color: #e3e8ee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.keunggulan-item h3 {
+    font-size: 22px;
+    color: #00274d;
+    margin-bottom: 10px;
+}
+
+.keunggulan-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .keunggulan-items {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    .keunggulan-item {
         width: 100%;
     }
+}
+
+.contact-area {
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.contact-heading-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-heading-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-form-area {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-area input, .contact-form-area textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form-area input:focus, .contact-form-area textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #333;
+}
+
+.contact-form-area button {
+    background-color: #1D4163;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-form-area button:hover {
+    background-color: #fff;
+    color: #1D4163;
+}
+
+.contact-form-area button img {
+    margin-right: 10px;
 }
