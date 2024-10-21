@@ -6,6 +6,8 @@
     --dark: #04000B;
 }
 
+
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -37,6 +39,18 @@ h1,
 h2,
 .fw-bold {
     font-weight: 700 !important;
+}
+
+@media (max-width: 575.98px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    
+    }
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 h3,
@@ -102,7 +116,7 @@ h6,
     font-weight: bold;
     vertical-align: middle;
     margin-left: 8px;
-    
+
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -115,7 +129,7 @@ h6,
     color: var(--light) !important;
     outline: none;
     transition: .5s;
-    
+
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -177,7 +191,7 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
@@ -223,7 +237,6 @@ h6,
     padding-bottom: 12rem;
     background:
         url(../img/Shape2.png),
-        url(../img/header.png),
         url(../img/header.png);
     background-position:
         left 0px bottom 0px,
@@ -234,6 +247,10 @@ h6,
         contain,
         cover,
         contain;
+}
+
+.hero-header {
+    margin-bottom: 2.5rem;
 }
 
 /*** ASET ***/
@@ -389,7 +406,7 @@ h6,
     background: var(--light);
     overflow: hidden;
     transition: .5s;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 .service-item img {
@@ -555,7 +572,7 @@ h6,
         center top;
     background-repeat: no-repeat;
     background-size:
-    contain;
+        contain;
 }
 
 .footer .btn.btn-social {
@@ -661,7 +678,7 @@ h6,
 }
 
 .footer .footer-services a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
 
 /* Responsive behavior for smaller screens */
@@ -669,21 +686,21 @@ h6,
     .footer-content {
         flex-direction: column;
     }
-    
+
     .footer-logo {
         order: -1;
         margin-bottom: 20px;
     }
 
-    .footer-services, .footer-contact {
+    .footer-services,
+    .footer-contact {
         margin-bottom: 20px;
     }
 }
 
-
 .custom-image-style {
     position: relative;
-    max-width: 100%; 
+    max-width: 100%;
     border-radius: 26px;
     margin: 0 auto;
 }
@@ -691,7 +708,7 @@ h6,
 /*** contact dan maps ***/
 .contact-section .row {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -716,21 +733,21 @@ h6,
     margin: 20px auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
 }
 
 
 @media (max-width: 767px) {
     .contact-info {
-        width: 90%; 
-        max-width: 300px; 
+        width: 90%;
+        max-width: 300px;
         margin: 20px auto;
-        right: 0; 
+        right: 0;
     }
-    
+
     .map-wrapper {
         margin: 0 auto;
     }
@@ -738,6 +755,14 @@ h6,
     .benefits-section .container {
         max-width: 90%;
         margin: 0 auto;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .p-text {
+        text-align: justify;
     }
 }
 
@@ -764,12 +789,12 @@ h6,
 
 .about h2::after {
     content: '';
-    display: inline-block; 
-    width: 250px; 
+    display: inline-block;
+    width: 250px;
     height: 5px;
-    background-color: #555; 
+    background-color: #555;
     vertical-align: middle;
-    margin-left: 1px; 
+    margin-left: 1px;
 }
 
 .about h2 span {
@@ -805,16 +830,16 @@ h6,
 
 @media (max-width: 767px) {
     .fs-header {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
-    
+
     .hero-header-aset {
-        margin-bottom: 1.5rem; 
+        margin-bottom: 1.5rem;
     }
 
     .slideshow-text {
-        margin-top: 0.5rem; 
-        text-align: center; 
+        margin-top: 0.5rem;
+        text-align: center;
     }
 
     .ftco-section {
@@ -879,7 +904,7 @@ h6,
 @media (max-width: 480px) {
     .service-card {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -892,7 +917,7 @@ h6,
     }
 
     .service-card .text-content {
-        order: 1; 
+        order: 1;
         margin-top: 10px;
         text-align: center;
     }
@@ -912,8 +937,8 @@ h6,
 }
 
 .keunggulan-items {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -949,7 +974,7 @@ h6,
 
 @media (max-width: 1080px) {
     .keunggulan-items {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: stretch;
     }
 
@@ -982,7 +1007,8 @@ h6,
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form-area input, .contact-form-area textarea {
+.contact-form-area input,
+.contact-form-area textarea {
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -993,7 +1019,8 @@ h6,
     color: #333;
 }
 
-.contact-form-area input:focus, .contact-form-area textarea:focus {
+.contact-form-area input:focus,
+.contact-form-area textarea:focus {
     outline: none;
     border-bottom: 2px solid #333;
 }

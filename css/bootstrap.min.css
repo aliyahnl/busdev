@@ -44,12 +44,13 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 !important; 
     font-family: "Heebo", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #726D7B;
+    overflow-x: hidden;
     background-color: #F6F4F9;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
@@ -607,7 +608,7 @@ progress {
 .img-thumbnail {
     padding: .25rem;
     background-color: #F6F4F9;
-    border: 1px solid #dee2e6;
+    /* border: 1px solid #dee2e6; */
     border-radius: 10px;
     max-width: 100%;
     height: auto

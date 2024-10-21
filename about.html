@@ -94,26 +94,43 @@
 
 
         <!-- About Start -->
-        <div class="py-3 about-kelana">
+        <div class="py-4 about-kelana">
             <div class="container py-1 px-lg-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="img/about.jpg" alt="About Kelana" class="img-fluid rounded custom-image-style">
+                    <div class="col-md-6">
+                        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/about.jpg" class="d-block w-100" alt="About Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/about2.jpeg" class="d-block w-100" alt="About Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/about3.jpeg" class="d-block w-100" alt="About Image 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-3">Tentang Kelana</h1>
-                        <h5 class="mb-2">Kelana subsidiary of BPJPH</h5>
-                        <p class="mb-4">Kelana adalah platform yang didirikan oleh Unit Pengembangan Bisnis dalam upaya
-                            untuk menyatukan semua lini bisnis yang ada di
-                            Badan Penyelenggara Jaminan Produk Halal. Adapun bisnis yang terdapat pada kelana
-                            diantaranya adalah, Kelana Aset, Kelana Catering,
-                            dan Kelana Training.</p>
+                        <h1 class="about-text mb-3">Tentang Kelana</h1>
+                        <h5 class="about-text mb-2">Kelana subsidiary of BPJPH</h5>
+                        <p class="p-text mb-4">Kelana adalah platform yang didirikan oleh Unit Pengembangan Bisnis dalam upaya untuk menyatukan semua lini bisnis yang ada di
+                                        Badan Penyelenggara Jaminan Produk Halal. Adapun bisnis yang terdapat pada kelana diantaranya adalah, Kelana Aset, Kelana Catering,
+                                        dan BPJPH Education.</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
-
 
         <!-- Service Start -->
         <div id="products-services" class="py-3">
